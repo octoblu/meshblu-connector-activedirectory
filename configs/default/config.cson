@@ -5,9 +5,21 @@ properties:
     title: "Options"
     type: "object"
     properties:
-      example:
-        title: "Example String"
+      url:
+        title: "URL"
+        type: "string"
+      baseDN:
+        title: "Base DN"
+        type: "string"
+      username:
+        title: "Username"
+        type: "string"
+      password:
+        title: "Password"
         type: "string"
     required: [
-      "example"
+      "url"
+      "baseDN"
+      "username"
+      "password"
     ]
