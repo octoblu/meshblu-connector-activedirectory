@@ -1,8 +1,10 @@
 {EventEmitter}  = require 'events'
 debug           = require('debug')('meshblu-connector-activedirectory:index')
+ActiveDirectory = require 'activedirectory'
 
 class Connector extends EventEmitter
   constructor: ({@ActiveDirectory})->
+    @ActiveDirectory ?= ActiveDirectory
 
   close: (callback) =>
     debug 'on close'
